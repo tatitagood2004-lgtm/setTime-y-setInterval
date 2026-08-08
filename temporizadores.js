@@ -31,7 +31,7 @@ console.log("Temporizando el programa");
 
 setTimeout(() => {
     clearTimeout(timeoutID);
-    console.log("mensaje cada 1 segundo");
+    console.log("time cancelado");
 },1000);
 
 const interval = setInterval(() =>{
@@ -42,4 +42,5 @@ const interval = setInterval(() =>{
 
 setTimeout(() =>{
 clearInterval(interval);
+console.log("Intervalo cancelado");
 },5000);
